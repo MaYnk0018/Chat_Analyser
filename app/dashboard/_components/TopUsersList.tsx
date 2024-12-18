@@ -8,7 +8,7 @@ import {
   CardDescription,
   Card,
 } from "@/components/ui/card";
-import { RecentSales } from "@/components/dashboard/recent-sales";
+
 
 
 const TopUsersList = async () => {
