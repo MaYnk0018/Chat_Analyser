@@ -66,9 +66,7 @@ const FileUploadClientComponent: React.FC = () => {
         <button
           onClick={handleSubmit}
           disabled={loading || !file}
-          className={`rounded bg-blue-500 px-4 py-2 text-white ${
-            loading || !file ? "cursor-not-allowed opacity-50" : ""
-          }`}
+          className={`rounded bg-blue-500 px-4 py-2 text-white`}
         >
           {loading ? "Processing..." : "Upload File"}
         </button>

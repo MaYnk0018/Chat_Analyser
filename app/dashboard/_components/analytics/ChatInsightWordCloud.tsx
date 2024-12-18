@@ -1,12 +1,16 @@
 "use client";
 
 import React, { useCallback, useState } from "react";
-import ReactWordcloud from "react-d3-cloud";
+//import ReactWordcloud from "react-d3-cloud";
 import Section from "@/components/dashboard/Section";
 import { useChatInsightStore } from "@/providers/chatInsightStoreProvider";
 import ChatStatsBox from "@/components/dashboard/ChatStatsBox";
 import { cn } from "@/lib/utils";
+import dynamic from 'next/dynamic'
 
+const ReactWordcloud = dynamic(() => import('react-d3-cloud'), { 
+  ssr: false 
+})
 // TODO: Refactor component to move select inside layout
 const ChatInsightWordCloud = () => {
   const [selectedWord, setSelectedWord] = useState<WordCloudWordType>();
