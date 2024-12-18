@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 
 const siteTitle = `${SITE_NAME} - WhatsApp Analytics and Insights app`;
 export const metadata: Metadata = {
-  metadataBase: new URL("chat-analyser-git-main-mayanks-projects-8513f114.vercel.app"),
+  metadataBase: new URL("http://localhost:3000"),
   title: siteTitle,
   description:
     "A full fledged application to analyze your whatsapp chat, fun facts, and its trends. It is 100% secure",
@@ -25,14 +25,13 @@ export const metadata: Metadata = {
     title: siteTitle,
     description:
       "A full fledged application to analyze your whatsapp chat, fun facts, and its trends. It is 100% secure",
-    url: "chat-analyser-git-main-mayanks-projects-8513f114.vercel.app",
   },
   twitter: {
     title: siteTitle,
     description:
       "A full fledged application to analyze your whatsapp chat, fun facts, and its trends. It is 100% secure",
     card: "summary_large_image",
-    site: "chat-analyser-git-main-mayanks-projects-8513f114.vercel.app",
+    site: '@eMartiiin94',
     
   },
 };
