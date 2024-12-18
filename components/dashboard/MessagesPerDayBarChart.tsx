@@ -1,6 +1,6 @@
 "use client";
 
-import { MessagesPerDayResultType } from "@/data/whatsapp-chat/messages-per-day";
+
 import { format } from "date-fns";
 import {
   Bar,
@@ -13,7 +13,7 @@ import {
 } from "recharts";
 
 interface MessagesPerDayBarChartProps {
-  data: MessagesPerDayResultType[];
+  data: any;
 }
 
 const CustomTooltip = ({ active, payload, label }: any) => {
