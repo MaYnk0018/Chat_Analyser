@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "set NEXT_TELEMETRY_DISABLED=1 && next build",
+    "build": "next build",
     "vercel-build": "next build",
     "start": "next start",
     "lint": "next lint",

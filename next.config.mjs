@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ["lucide-react"],
   experimental: {
-    optimizeCss: false,
+    optimizeCss: true,
   },
   images: {
     unoptimized: true,
