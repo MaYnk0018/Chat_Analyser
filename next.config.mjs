@@ -5,7 +5,17 @@ const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ["lucide-react"],
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
+  },
+  images: {
+    unoptimized: true,
+  },
+  webpack: (config) => {
+    config.watchOptions = {
+      poll: 1000,
+      aggregateTimeout: 300,
+    }
+    return config
   },
   typescript: {
     ignoreBuildErrors: true, // temporarily while debugging
